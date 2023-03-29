@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function add()
+		{
+			var a, b, c;
+			a=parseFloat(document.getElementById("t1").value);
+			b=parseFloat(document.getElementById("t2").value);;
+			c=parseFloat(document.getElementById("t3").value);;
+			const d=a+b+c;
+			document.getElementById("result").innerHTML=d;
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="t1" placeholder="enter no 1" name=""><br>
+	<input type="text" id="t2" placeholder="enter no 2" name=""><br>
+	<input type="text" id="t3" placeholder="enter no 3" name=""><br>
+	<input type="button" onclick="add()" value="result">
+	<br>
+	<div id="result"></div>
+
+</body>
+</html>

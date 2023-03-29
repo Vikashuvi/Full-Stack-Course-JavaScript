@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function print()
+		{
+			var a=application.txt.value;
+			var b=application.txt2.value;
+
+			document.write("<h1>Username :"+a+"</h1>");
+			document.write("<h1>password :"+b+"</h1>");
+				if (a=="admin" && b=="password")
+				{
+					alert("valid user");
+				}
+				else
+				{
+					alert("invalid user");
+				}
+		}
+	</script>
+</head>
+<body>
+	<form name="application">
+	<input type="text" name="txt" placeholder="Enter your name:"><br>
+	<input type="password" name="txt2" placeholder="Enter password:"><br>
+	<button onclick="print()">enter</button>
+	</form>
+</body>
+</html>

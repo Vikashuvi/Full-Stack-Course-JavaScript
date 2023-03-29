@@ -1,0 +1,28 @@
+<title></title>
+	<script type="text/javascript">
+		function show()
+		{
+			event.preventDefault(); //don't referesh
+			var n=document.getElementById("t").value;
+			document.getElementById("res1").innerHTML=n.length;
+			document.getElementById("res2").innerHTML=n.toUpperCase();
+			document.getElementById("res3").innerHTML=n.toLowerCase();
+			document.getElementById("res4").innerHTML=n.substring(4,6);
+			document.getElementById("res5").innerHTML=n.replace("a","o");
+			document.getElementById("res6").innerHTML=n.replaceAll("v","c");
+		}
+	</script>
+</head>
+<body>
+	<form onsubmit="show()">
+		<label>Enter Text:<input type="text" id="t"></label>
+		<br>
+		<input type="submit" name="strfun">
+	</form>
+	<div id="res1"></div>
+	<div id="res2"></div>
+	<div id="res3"></div>
+	<div id="res4"></div>
+	<div id="res5"></div>
+	<div id="res6"></div>
+</body>

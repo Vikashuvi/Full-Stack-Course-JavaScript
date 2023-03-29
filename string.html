@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function show()
+		{
+			event.preventDefault(); //don't referesh
+			var n=document.getElementById("t").value;
+			document.getElementById("res1").innerHTML="with trim"+n.trim();
+			document.getElementById("res2").innerHTML="without trim"+n;
+			document.getElementById("res3").innerHTML="char 4th position:"+n.charAt(4);
+			document.getElementById("res4").innerHTML="index of "+n.indexOf('k');
+		}
+	</script>
+</head>
+<body>
+	<form onsubmit="show()">
+		<label>Enter Text:<input type="text" id="t"></label>
+		<br>
+		<input type="submit" name="strfun">
+	</form>
+	<div id="res1"></div>
+	<div id="res2"></div>
+	<div id="res3"></div>
+	<div id="res4"></div>
+</body>
+</html>

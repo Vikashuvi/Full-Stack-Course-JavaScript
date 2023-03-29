@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function pass()
+		{
+			var q;
+			a=parseInt(document.getElementById("t1").value);
+			if(a>=35)
+			document.getElementById("result").innerHTML="<font color='green'>PASS</font>";
+			else
+				document.getElementById("result").innerHTML="<font color='red'>fail</font>";
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="t1" placeholder="enter your mark:" name=""><br>
+	<input type="button" onclick="pass()" value="result">
+	<br>
+	<div id="result"></div>
+</body>
+</html>

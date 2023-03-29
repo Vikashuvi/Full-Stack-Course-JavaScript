@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function myfunc(){
+		var stud={
+			sid:document.getElementById("sid").value,
+			sname:document.getElementById("sname").value,
+			mark:{
+				tamil:parseInt(document.getElementById("m1").value),
+				english:parseInt(document.getElementById("m2").value),
+				maths:parseInt(document.getElementById("m3").value),
+				tot:null,
+				avg:null,
+				res:null
+
+			}
+		}
+		
+		var mobj=stud.mark;
+
+		var sum=0;
+		var per=0;
+		var res="fail"
+		for(i in mobj)
+		{
+			sum=sum+stud.mark[i];
+		}
+		stud.mark.tot=sum;
+		stud.mark.avg=sum/3.0;
+		
+		if(mobj.tamil>34 && mobj.english>34 && mobj.math>34)
+		{
+			res="pass";
+		}
+
+		stud.mark.res=res;
+		for(i in mobj)
+		{
+			document.write("<br> key: "+i);
+			document.write("value:"+stud.mark[i]);
+		}
+	}
+	</script>
+</head>
+<body>
+<form onsubmit="myfunc()">
+	<input type="text" id="sid" placeholder="student id"><br>
+	<input type="text" id="sname" placeholder="student name"><br>
+	<input type="text" id="m1" placeholder="tamil"><br>
+	<input type="text" id="m2" placeholder="english"><br>
+	<input type="text" id="m3" placeholder="math"><br>
+	<input type="submit" value="finf total avg res using json">
+</form>
+</body>
+</html>

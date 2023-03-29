@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function showdata()
+		{
+			var d=new Date();
+			document.getElementById("res").innerHTML="Date and time"+d;
+			setTimeout(showdata,1000,"javascript");
+ 		}
+	</script>
+</head>
+<body onload="showdata()">
+	<div id="res"></div>
+</body>
+</html>

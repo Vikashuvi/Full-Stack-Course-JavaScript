@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function add()
+		{
+			a=parseInt(prompt("enter no1:"))
+			b=parseInt(prompt("enter no2:"))
+			caller(a,b)
+		}
+		function caller(x,y)
+		{
+			/*if(x,y)
+			{
+				alert(x+"is greater ");
+			}
+			else
+			{
+				alert(y+"is greater")
+			}*/
+			var ans=x>y ? x : y ;
+			alert("greater number:"+ans); 
+		}
+		/* another method using conditional opertor*/
+
+	</script>
+</head>
+<body>
+	<input type="button" onclick="add()" name="add" value="click here">
+</body>
+</html>

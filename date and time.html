@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function showdata()
+		{
+			var d=new Date();
+			document.getElementById("res").innerHTML="Date and time"+d;
+			var d1=d.getDate();
+			var m1=d.getMonth()+1;
+			var y1=d.getFullYear();
+
+			document.getElementById("res2").innerHTML=d1+" / "+m1+" / "+y1;
+
+			var h=d.getHours();
+			var min=d.getMinutes();
+			var sec=d.getSeconds();
+			
+			document.getElementById("res3").innerHTML=h+" / "+min+" / "+sec;
+
+			setTimeout(showdata,1000,"javascript");
+ 		}
+	</script>
+</head>
+<body onload="showdata()">
+	<div id="res"></div>
+	<div id="res2"></div>
+	<div id="res3"></div>
+</body>
+</html>

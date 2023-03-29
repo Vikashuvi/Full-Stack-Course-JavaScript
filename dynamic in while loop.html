@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function show()
+		{
+			var s=parseInt(document.getElementById("t1").value);
+			var e=parseInt(document.getElementById("t2").value);
+			var tot=0;
+		var i=s;
+		while(i<e)
+		{
+			document.write(i+"+");
+			tot=tot+i;
+			i++;
+		}
+		document.write(i+"="+(tot+i));
+		 }
+	</script>
+</head>
+<body>
+	<input type="text" id="t1" placeholder="enter starting no:" name=""><br>
+	<input type="text" id="t2" placeholder="enter second no:" name=""><br>
+	<input type="button" value="click me" onclick="show()" >
+</body>
+</html>

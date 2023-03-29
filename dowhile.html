@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function dis()
+		{
+			var n=parseInt(document.getElementById("t1").value);
+			
+			do
+			{
+				document.write("<br>"+n)
+				n--;
+			}
+			while(n!=100);
+			document.write("<br>end");
+		}
+	</script>
+</head>
+<body>
+<input type="text" id="t1" placeholder="Enter number:">
+<br>
+<input type="button" onclick="dis()" value="sunm of digits" name="">
+<br>
+<div id="res"></div>
+</body>
+</html>

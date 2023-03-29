@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function add()
+		{
+			a=parseInt(prompt("enter no1:"))
+			b=parseInt(prompt("enter no2:"))
+			var big=caller(a,b)
+			document.getElementById("res").innerHTML=big;
+		}
+		function caller(x,y)
+		{
+			var ans=x>y ? x : y;
+			return ans;
+		}
+	</script>
+</head>
+<body>
+	<input type="button" onclick="add()" name="add" value="click here">
+	<br>
+	biggest number<div id="res"></div>
+</body>
+</html>
